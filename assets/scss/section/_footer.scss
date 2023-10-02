@@ -1,0 +1,86 @@
+.footer {
+    position: relative;
+
+    &-row {
+        @include flex(center, unset);
+        flex-wrap: wrap;
+    
+        @include media(768) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+    }
+    
+    &-card {
+        width: 33.33%;
+       
+
+        @include media(768) {
+            flex-wrap: wrap;
+           
+            
+        }
+    }
+    &-image {
+        margin-bottom: 10px;
+
+        @include media(768) {
+            margin: 0 auto;
+        }
+    }
+
+    &-title {
+        color: #263238;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 8px;
+    }
+
+    &-title__contact {
+        margin-top: 75px;
+        margin-bottom: 15px;
+        color: #263238;
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    &-subtitle {
+        color: #263238;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 149.187%;
+    }
+
+    &-image {
+        margin-top: 75px;
+
+
+        &__cite {
+            width: 100&;
+            height: 100%;
+
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+
+    .footer-bg-red {
+        height: 64px;
+        background-color: #EE4248;
+        margin-top: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+
+    .footer-subtitle-down {
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}

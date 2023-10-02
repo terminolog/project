@@ -1,0 +1,121 @@
+.technology-section {
+    width: 100%;
+    @include flex(center, center);
+}
+.banner-bg-red {
+    background-color: #EE4248;
+
+}
+.technology-row {
+    width: 100%;
+
+}
+.technology-banner{
+    @include flex(center, center);
+    flex-direction: column;
+    text-align: center;
+
+}
+.technology-bannet-title {
+    margin-top: 82px;
+    text-align: center;
+    max-width: 750px;
+    color: #EE4248;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 140.688%;
+
+    @include media(900) {
+        font-size: 40px;
+        max-width: 550px;
+    }
+    @include media(765) {
+        font-size: 36px;
+        max-width: 450px;
+    }
+}
+
+.technology-banner-button {
+    margin-top: 24px;
+    margin-bottom: 70px;
+    width: 166px;
+    height: 56px;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #EE4248;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 144.687%; 
+
+    @include media(756){
+        display: none;
+    }
+}
+
+.banner-macbook-image {
+    max-width: 567px;
+    
+    & img {
+        width: 100%;
+        height: 100%;
+    }
+
+    @include media(756){
+        max-width: 334px;
+        
+    }
+}
+
+.technology-icons {
+    margin: 72px 0;
+    @include flex(center, center);
+    gap: 125px;
+
+    @include media(1100) {
+        margin: 50px 0;
+        gap: 50px;
+    }
+
+    @include media(756){
+        margin: 40px 0;
+        gap: 34px;
+    }
+
+}
+
+.technology-icon {
+    width: 80px;
+    height: 80px;
+
+    @include media(900) {
+        width: 60px;
+        height: 60px;
+    }
+
+    & img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.technology-title {
+    color: #263238;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 140.688%;
+
+}
+.technology-content img {
+    margin-bottom: 32px;
+}
+
+.technology-content-subtitle {
+    margin-bottom: 68px;
+    color: #263238;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140.688%; 
+}
